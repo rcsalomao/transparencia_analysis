@@ -1,0 +1,5 @@
+pandas
+matplotlib
+notebook
+mysql-connector-python
+gdown

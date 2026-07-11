@@ -51,7 +51,7 @@ MYSQL_CONFIG = {
 ANO = "2025"
 
 # ---- De onde baixar o .zip ----
-DRIVE_FILE_ID = "COLE_AQUI_O_ID_DO_ARQUIVO_NO_DRIVE"
+DRIVE_FILE_ID = "1R6re1574aCeqNfwJXQ_T7BwHCEsPfgvc"
 
 # Tamanho do bloco de leitura/insercao (numero de linhas por vez).
 
@@ -71,3 +71,19 @@ ARQUIVOS = {
 # Caracteristicas dos arquivos CSV do Portal da Transparencia:
 CSV_SEPARADOR = ";"
 CSV_ENCODING = "latin-1"  # acentuacao no padrao ISO-8859-1
+
+
+# Minhas cores preferidas para plotagem de gráficos
+MY_PALETTE = (
+    "#767676FF",
+    "#55AD89FF",
+    "#6388B4FF",
+    "#BB7693FF",
+    "#EF6F6AFF",
+    "#FFAE34FF",
+    "#8CC2CAFF",
+    "#C3BC3FFF",
+    "#A9B5AEFF",
+    "#BAA094FF",
+)
+MY_COLORS = {"base": "#424e4f", "accent": "#d9366f"}
