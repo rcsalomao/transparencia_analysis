@@ -2,7 +2,7 @@
 -- ETAPA 0 - CRIAR O BANCO E AS TABELAS
 -- ===========================================================================
 -- INSTRUÇÕES:
---   1) Abra o MySQL Workbench e conecte no seu servidor (Local instance).
+--   1) Abra o MySQL Workbench e conecte no seu servidor (instância local).
 --   2) Abra uma aba de query (SQL) em branco.
 --   3) Copie TODO o conteudo deste arquivo.
 --   4) Cole na aba de query do Workbench.

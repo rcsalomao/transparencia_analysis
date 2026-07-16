@@ -12,7 +12,7 @@ Execução dos comandos SQL, em ordem.
 ------------------------------------------------------------------------------
 CONVERSÃO DO TEXTO DA CAMADA RAW:
 
-  - Dinheiro: "1.234,50" (texto)  ->  1234.50 (numero DECIMAL)
+  - Dinheiro: "1.234,50" (texto)  ->  1234.50 (número DECIMAL)
       tira o ponto de milhar, troca a vírgula por ponto e faz CAST:
       CAST(REPLACE(REPLACE(NULLIF(TRIM(coluna), ''), '.', ''), ',', '.') AS DECIMAL(10,2))
 
@@ -159,7 +159,7 @@ WHERE id_viagem IN (SELECT id_viagem FROM silver_viagem);
 
 # 3) Calculando as colunas derivadas.
 # Agora que os valores já são números e as datas já são DATE é possível facilmente obter os atributos derivados.
-# COALESCE(coluna, 0) usa 0 quando o valor for NULL (vazio), para nao quebrar a soma.
+# COALESCE(coluna, 0) usa 0 quando o valor for NULL (vazio), para não quebrar a soma.
 SQL_CALC_VIAGEM = """
 UPDATE silver_viagem
 SET valor_total = COALESCE(valor_diarias, 0) + COALESCE(valor_passagens, 0) + COALESCE(valor_outros_gastos, 0) - COALESCE(valor_devolucao, 0),

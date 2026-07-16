@@ -26,7 +26,7 @@ from common import config, banco
 # ---------------------------------------------------------------------------
 def obter_zip():
     """
-    Aponta para o viagens.zip caso já esteja na pasta 'data/'.
+    Aponta para o 'viagens.zip' caso já esteja na pasta 'data/'.
     Do contrário, realiza o download do arquivo do google drive.
     """
     config.PASTA_DADOS.mkdir(exist_ok=True)
@@ -54,7 +54,7 @@ def carregar_csv(conexao, zip_aberto, nome_csv, tabela):
     Lê um CSV de dentro do zip e insere todas as linhas na tabela do MySQL.
 
     As colunas do CSV estão na MESMA ordem das colunas da tabela
-    (definidas no 0_criar_banco.txt) para que seja possível a inserção "na ordem",
+    (definidas no '0_criar_banco.txt') para que seja possível a inserção "na ordem",
     sem precisar escrever o nome de cada coluna.
     """
     print("      Carregando", tabela, "...")

@@ -15,7 +15,7 @@ PASTA_DADOS = PASTA_RAIZ / "data"
 
 
 # ---------------------------------------------------------------------------
-# Leitura simples do arquivo .env (sem biblioteca externa)
+# Leitura simples do arquivo .env
 # ---------------------------------------------------------------------------
 def carregar_env():
     """Le o arquivo .env (se existir) e joga as variaveis para os.environ."""

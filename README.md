@@ -85,7 +85,7 @@ Adicionalmente é possível invocar os referidos scripts por meio do interpretad
 
 Por fim, o arquivo `3_analise.ipynb` deve ser executado por meio do interpretador 'jupyter-notebook', que se encontra na mesma pasta de binários que o interpretador 'Python' do ambiente.
 
-Como exemplo, pode-se consultar o arquivo `./scripts/run.sh`, em que a variável `$PYTHON_ENV` aponta para a pasta raiz do ambiente 'Python' correto.
+Como exemplo, pode-se consultar o arquivo `./scripts/run.sh`, em que a variável `$PYTHON_ENV` deve apontar para a pasta raiz do ambiente 'Python' correto.
 
 ### Resultados
 
@@ -270,7 +270,7 @@ finally:
     
 
 
-Percebe-se que nenhuma das tabelas registraram valores duplicados. Adicionalmente, com a exceção da tabela silver_viagem (para o atributo 'cargo' com 37,4%), todas as outras possuem colunas com números insignificantes de valores nulos (no máximo de 3,7% em silver_passagem). Entende-se que, portanto, é possível sim fazer uso de todas as colunas (tomando o cuidado de desconsiderar o atributo 'cargo' de silver_viagem) sem prejuízo no resultado da análise.
+Percebe-se que nenhuma das tabelas registraram valores duplicados. Adicionalmente, com a exceção da tabela 'silver_viagem' (para o atributo 'cargo' com 37,4%), todas as outras possuem colunas com números insignificantes de valores nulos (no máximo de 3,7% em silver_passagem). Entende-se que, portanto, é possível sim fazer uso de todas as colunas (tomando o cuidado de desconsiderar o atributo 'cargo' de 'silver_viagem') sem prejuízo no resultado da análise.
 
 Na sequência, as seguintes perguntas de negócio são respondidas:
 
@@ -451,7 +451,7 @@ finally:
     
 
 
-Nota-se que os 3 registros cujo destinos possuem o maior ticket médio pertencem à apenas uma viagem, cada um. Deve-se relembrar que uma viagem é composta por diversos trechos, com cada trecho composto por um local de 'origem' e um local de 'destino'. O campo 'destinos' dessa tabela concatena todos os destinos dos trechos de cada viagem. Para esses registros, seus valores de ticket resultaram maiores que R\\$ 200.000,00 até quase R\\$ 250.000,00. Já a quantidade de locais nos destinos varia de 3 até 48, com um valor médio de destinos visitados de 31,33.
+Nota-se que os 3 registros cujo destinos possuem o maior ticket médio pertencem à apenas uma viagem, cada um. Deve-se relembrar que uma viagem é composta por diversos trechos, com cada trecho composto por um local de 'origem' e um local de 'destino'. O campo 'destinos' dessa tabela concatena todos os destinos dos trechos de cada viagem. Para esses registros, seus valores de ticket resultaram maiores que R\$ 200.000,00 até quase R\$ 250.000,00. Já a quantidade de locais nos destinos varia de 3 até 48, com um valor médio de destinos visitados de 31,33.
 
 Para se ter uma melhor compreensão do dataset e conseguir representar o comportamento geral da tabela de viagens, pode-se realizar um filtro na query para limpar possíveis distorções nos resultados de viagens muito mais caras que as demais e pouco frequentes. Esta nova query e seus resultados são demonstrados à seguir.
 
@@ -527,7 +527,7 @@ finally:
     
 
 
-Ao se realizar a filtragem de viagens que ocorrem com pouca frequência, é possível se ter uma melhor compreensão do conjunto de dados. Nota-se que as viagens mais caras, em média, possuem exclusivamente o destino 'Brasília/DF' no seu atributo de 'destinos'. Indicando que a capital do país, por diversos motivos, age como um hub principal de conexão do conjunto de viagens analisado. Vale lembrar que a capital, além de ser o centro administrativo do governo federal, também está basicamente posicionada no centro geográfico, podendo atender de forma mais uniforme todo o território nacional.
+Ao se realizar a filtragem de viagens que ocorrem com pouca frequência, é possível se ter uma melhor compreensão do conjunto de dados. Nota-se que as viagens mais caras, em média, possuem exclusivamente o destino 'Brasília/DF' no seu atributo de 'destinos'. Indicando que a capital do país, por diversos motivos, age como um hub principal de conexão do conjunto de viagens analisado. Vale lembrar que a capital, além de ser o centro administrativo do governo federal, também está basicamente posicionada no centro geográfico do país, podendo atender de forma mais uniforme todo o território nacional.
 
 
 ```python
@@ -617,7 +617,7 @@ finally:
     
 
 
-O custo total da viagem que possui a maior duração (383 dias) é de R\\$ 0,00. Realizando uma melhor inspeção dos registros das 10 viagens mais longas em duração, é possível perceber que as únicas viagens que possuem custo são referentes ao Ministério da Justiça e Segurança Pública. Todas as outras instituições (Ministério da Previdência Social e Ministério da Educação) registraram custo nulo. Verificando as respectivas motivações, nota-se que é basicamente ou transferência de local de atuação de servidor público, ou afastamento de servidor para que este possa realizar treinamento/aperfeiçoamento no período.
+O custo total da viagem que possui a maior duração (383 dias) é de R\$ 0,00. Realizando uma melhor inspeção dos registros das 10 viagens mais longas em duração, é possível perceber que as únicas viagens que possuem custo são referentes ao Ministério da Justiça e Segurança Pública. Todas as outras instituições (Ministério da Previdência Social e Ministério da Educação) registraram custo nulo. Verificando as respectivas motivações, nota-se que é basicamente ou transferência de local de atuação de servidor público, ou afastamento de servidor para que este possa realizar treinamento/aperfeiçoamento no período.
 
 
 ```python
@@ -690,7 +690,7 @@ finally:
     
 
 
-Pela figura apresentada, percebe-se que, basicamente, os tipos de pagamento com os maiores valores de ticket médio são 'diárias' e 'passagem'. Respectivamente, os seus valores de ticket médio são R\\$ 2.078,28 e R\\$ 1.878,34. Já para os pagamentos dos tipos 'seguro' e 'restituição' os respectivos valores são de R\\$ 447,51 e R$ 245,70. Desta forma, é possível notar a presença de dois grupos de tipos significativamente distintos entre si.
+Pela figura apresentada, percebe-se que, basicamente, os tipos de pagamento com os maiores valores de ticket médio são 'diárias' e 'passagem'. Respectivamente, os seus valores de ticket médio são R\$ 2.078,28 e R\$ 1.878,34. Já para os pagamentos dos tipos 'seguro' e 'restituição' os respectivos valores são de R\$ 447,51 e R$ 245,70. Desta forma, é possível notar a presença de dois grupos significativamente distintos entre si com uma diferença média maior que 5 vezes no valor do ticket.
 
 
 ```python

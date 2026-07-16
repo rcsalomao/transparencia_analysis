@@ -11,8 +11,8 @@ from .config import MYSQL_CONFIG
 
 def conectar():
     """
-    Abre uma conexao com o MySQL (no database configurado no .env) e a retorna.
-    Em caso de falha, lanca um erro claro (tratado por quem chama).
+    Abre uma conexão com o MySQL (no database configurado no .env) e a retorna.
+    Em caso de falha, lança um erro claro (tratado por quem chama).
     """
     try:
         return mysql.connector.connect(**MYSQL_CONFIG)
@@ -35,8 +35,9 @@ def executar(conexao, sql):
 
 def inserir_em_lote(conexao, sql_insert, linhas):
     """
-    Insere varias linhas de uma vez (mais rapido que uma a uma).
-    'linhas' e uma lista de tuplas; 'sql_insert' usa %s nos valores.
+    Insere vários registros de uma vez (mais rápido que uma a uma).
+    'linhas' é uma lista de tuplas;
+    'sql_insert' usa %s nos valores.
     """
     if not linhas:
         return
