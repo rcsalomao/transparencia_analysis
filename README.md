@@ -103,6 +103,8 @@ Na sequência é realizada a análise e resposta das perguntas de negócio propo
   </figure>
 </div>
 
+<br>
+
 <div align="center">
   <figure>
     <figcaption><strong>Esquema das tabelas da camada 'silver'.</strong></figcaption>
