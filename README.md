@@ -89,7 +89,24 @@ Como exemplo, pode-se consultar o arquivo `./scripts/run.sh`, em que a variável
 
 ### Resultados
 
-Como um dos resultados do projeto, tem-se a implementação de uma pipeline completo (ETL) para extração, limpeza, padronização e carga de dados do portal da transparência sobre viagens para um banco de dados em MySQL, seguindo a arquitetura medalhão.
+Como resultado do projeto, tem-se a implementação de uma pipeline completa (ETL) para extração, limpeza, padronização e carga de dados do portal da transparência sobre viagens para um banco de dados em MySQL, seguindo a arquitetura medalhão.
+Na sequência é realizada a análise e resposta das perguntas de negócio propostas anteriormente, cujos resultados são demonstrados mais à frente.
+
+#### Visão geral do banco e suas camadas
+
+É apresentado à seguir os esquemas das tabelas que compõem as camadas 'raw' e 'silver', respectivamente, do banco de dados construído pelas etapas do projeto.
+
+<figure>
+  <figcaption  style="text-align: center;"><strong>Esquema das tabelas da camada 'raw'.</strong></figcaption>
+  <img src="./assets/readme/schema_raw.png" alt="Esquema das tabelas da camada 'raw'.">
+</figure>
+
+<figure>
+  <figcaption  style="text-align: center;"><strong>Esquema das tabelas da camada 'silver'.</strong></figcaption>
+  <img src="./assets/readme/schema_silver.png" alt="Esquema das tabelas da camada 'silver'.">
+</figure>
+
+#### Análise das informações
 
 Adicionalmente, obtém-se um conjunto de resultados e considerações das análises realizadas em `./scripts/3_analise.ipynb`.
 À seguir é apresentado o conteúdo do referido script de análise.
