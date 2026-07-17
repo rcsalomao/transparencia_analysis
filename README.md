@@ -96,19 +96,19 @@ Na sequência é realizada a análise e resposta das perguntas de negócio propo
 
 É apresentado à seguir os esquemas das tabelas que compõem as camadas 'raw' e 'silver', respectivamente, do banco de dados construído pelas etapas do projeto.
 
-<center>
+<div align="center">
   <figure>
     <figcaption><strong>Esquema das tabelas da camada 'raw'.</strong></figcaption>
     <img src="./assets/readme/schema_raw.png" alt="Esquema das tabelas da camada 'raw'.">
   </figure>
-</center>
+</div>
 
-<center>
+<div align="center">
   <figure>
     <figcaption><strong>Esquema das tabelas da camada 'silver'.</strong></figcaption>
     <img src="./assets/readme/schema_silver.png" alt="Esquema das tabelas da camada 'silver'.">
   </figure>
-</center>
+</div>
 
 #### Análise das informações
 
